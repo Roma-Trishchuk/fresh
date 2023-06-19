@@ -1,0 +1,10 @@
+.product-cards {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  grid-column: 1/3;
+
+  &-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

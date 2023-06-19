@@ -1,0 +1,68 @@
+.blog {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  grid-column: 1/3;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 469px 269px 369px;
+    gap: 31.5px
+  }
+
+  &__main-card {
+    display: flex;
+    align-items: flex-end;
+    min-height: 400px;
+    background-image: url('../img/blog-image.jpg');
+    position: relative;
+    padding: 24px;
+    color: #FFFFFF;
+  }
+
+  &__card-desc {
+    font-weight: 600;
+      line-height: 18px;
+      font-size: 12px;
+      color: $accent;
+      position: absolute;
+      content: '';
+      top: 24px;
+      left: 24px;
+      padding: 0 8px;
+      background: #F4F8EC;
+      border-radius: 12px;
+  }
+
+  &__main-card-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 8px;
+  }
+
+  &__author-info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__author-photo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+  }
+
+  &__author-name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 16px;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  }
+} 

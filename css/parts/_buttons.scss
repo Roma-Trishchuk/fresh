@@ -1,9 +1,10 @@
 button,
 .button,
-input[type="submit"] {
+input[type='submit'] {
   display: inline-block;
   cursor: pointer;
   font-weight: 700;
+  border-radius: 12px;
 }
 
 .button {
@@ -14,11 +15,12 @@ input[type="submit"] {
     border: 2px solid darken($accent, 15%)
   }
   &--transparent {
-    background-color:white;
+    background-color: transparent;
     color: $dark;
     border-width: 2px;
     border: 2px solid $accent;
   }
+  
   //! размер кнопки
   &--default {
     padding: 16px 48px;
