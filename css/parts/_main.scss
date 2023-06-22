@@ -1,4 +1,8 @@
 .main {
+
+  &__content {
+    flex: 1 1 auto;
+  }
   &__container {
     display: grid;
     grid-template-columns: 270px 1fr;
