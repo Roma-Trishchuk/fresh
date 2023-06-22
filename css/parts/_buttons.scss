@@ -5,6 +5,12 @@ input[type='submit'] {
   cursor: pointer;
   font-weight: 700;
   border-radius: 12px;
+  transition: all ease-in-out 0.3s;
+
+  &:focus {
+    border: none;
+    outline: 2px solid darken($accent, 25%);
+  }
 }
 
 .button {
@@ -12,13 +18,26 @@ input[type='submit'] {
   &--primary {
     background-color: $accent;
     color: white;
-    border: 2px solid darken($accent, 15%)
+    border: 2px solid darken($accent, 15%);
+
+    &:active {
+      background-color: lighten($accent, 25%);
+    }
   }
   &--transparent {
     background-color: transparent;
     color: $dark;
     border-width: 2px;
     border: 2px solid $accent;
+
+    &:active {
+      color: $accent;
+    }
+
+    // &:focus {
+    //   border: none;
+    //   outline: 2px solid darken($accent, 25%); 
+    // }
   }
   
   //! размер кнопки

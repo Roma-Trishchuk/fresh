@@ -38,6 +38,16 @@
     line-height: 19px;
     color: $accent;
     text-decoration: underline;
+    transition: all  ease-in-out 0.3s;
+  }
+
+  &__link:focus {
+    text-decoration-color: $dark;
+    text-decoration-thickness: 2px;
+  }
+
+  &__link:active {
+    color: lightgreen;
   }
 
   &__button {
@@ -48,6 +58,10 @@
     font-size: 15px;
     line-height: 22px;
     color: $dark;
+
+    &:focus {
+      text-decoration-color: $dark;
+    }
 
     & span {
       margin-left: 12px;

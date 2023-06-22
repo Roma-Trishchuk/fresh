@@ -41,14 +41,26 @@
       &:last-child {
         margin-right: 0;
       }
+
+      &:active {
+        background-color: darken(#F5F5F5, 20%);
+      }
     }
   
     &-link {
       font-weight: 600;
       font-size: 12px;
       line-height: 18px;
-      color: $dark
+      color: $dark;
     }
+  }
+
+  & a:focus {
+    text-decoration: underline;
+  }
+
+  & a:active {
+    color: lightgreen;
   }
 }
 
